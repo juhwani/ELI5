@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Text Summarizer",
+  "version": "1.0",
+  "description": "An extension that summarizes selected text using the Google Gemini API.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "contextMenus",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "action": {
+    "default_popup": "scripts/popup.html", 
+    "default_icon": "logo.png"
+  },
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  }
+}
